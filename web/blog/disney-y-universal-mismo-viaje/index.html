@@ -23,32 +23,57 @@ blockquote{margin:1em 0;padding:12px 18px;background:var(--lavender);border-radi
 @media (prefers-reduced-motion:reduce){.lista li.card{transition:none}.lista li.card:hover{transform:none}}
 footer{max-width:720px;margin:0 auto;padding:20px;color:var(--muted);font-size:.85rem;border-top:1px solid #C9C2DD}
 img{max-width:100%}
-.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style></head><body>
+.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style><style>/* ancho-escritorio */
+.top{max-width:1180px}
+@media (min-width:900px){ main.indice-blog{max-width:1180px} main.indice-blog .lista{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px} }
+.lateral{display:grid;gap:18px;margin-top:36px}
+.lat-caja{background:var(--paper,#FFFCFA);border:1px solid #e3def7;border-radius:18px;padding:18px 20px}
+.lat-caja h2{font-family:Georgia,serif;font-weight:400;font-size:1.15rem;margin:0 0 10px;color:var(--indigo,#27205F)}
+.lat-caja p{font-size:.95rem;margin:0 0 10px;line-height:1.5}
+.lat-indice{display:none}
+.lat-indice ol{margin:0;padding-left:1.1em;font-size:.95rem;line-height:1.55}
+.lat-indice li{margin:0 0 6px}
+.lat-mail{background:var(--indigo,#27205F);color:var(--cream,#FFF8EA);border:0}
+.lat-mail h2{color:var(--cream,#FFF8EA)}
+.lat-mail form{display:grid;gap:8px}
+.lat-mail input{min-height:44px;padding:8px 14px;border:0;border-radius:999px;font:16px Arial,Helvetica,sans-serif}
+.lat-mail button{min-height:44px;border:0;border-radius:999px;background:var(--mint,#85E8D7);color:var(--indigo,#27205F);font:700 15px Arial,Helvetica,sans-serif;cursor:pointer}
+.lat-mail .estado{min-height:1.2em;font-size:.9rem;font-weight:700;margin:4px 0 0}
+.lat-guias ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.lat-guias a{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;font-size:.92rem;line-height:1.35;text-decoration:none;color:inherit}
+.lat-guias img{width:72px;height:54px;object-fit:cover;border-radius:10px}
+@media (min-width:1100px){
+  main.con-lateral{max-width:1180px;display:grid;grid-template-columns:minmax(0,1fr) 320px;column-gap:56px;align-items:start}
+  main.con-lateral .cuerpo{max-width:760px}
+  .lateral{position:sticky;top:20px;margin-top:8px;max-height:calc(100vh - 40px);overflow:auto}
+  .lat-indice{display:block}
+}
+</style></head><body>
 <header class="top"><a href="/" aria-label="Había una vez Orlando, inicio"><img src="/marca/logo-principal.svg" alt="Había una vez Orlando" width="170" height="70"></a>
 <nav aria-label="Principal"><a href="/blog/">Guías</a><a href="/#planes">Planes</a><a href="/#empezar">Empezar mi plan</a></nav></header>
-<main><h1>Disney y Universal en el mismo viaje: cómo armar 7, 10 y 14 días</h1><figure class="foto hero"><img src="/fotos/commons/universal-islands-of-adventure-harry-potter-castle-9127i.jpg" alt="Vista amplia del castillo de Hogwarts sobre las rocas en Islands of Adventure" loading="lazy" decoding="async"><figcaption>Foto: Loadmaster (David R. Tribble) · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Universal-Islands-of-Adventure-Harry-Potter-Castle-9127i.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p><em>Que sea como lo soñaron.</em></p>
+<main class="con-lateral"><div class="cuerpo"><h1>Disney y Universal en el mismo viaje: cómo armar 7, 10 y 14 días</h1><figure class="foto hero"><img src="/fotos/commons/universal-islands-of-adventure-harry-potter-castle-9127i.jpg" alt="Vista amplia del castillo de Hogwarts sobre las rocas en Islands of Adventure" loading="lazy" decoding="async"><figcaption>Foto: Loadmaster (David R. Tribble) · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Universal-Islands-of-Adventure-Harry-Potter-Castle-9127i.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p><em>Que sea como lo soñaron.</em></p>
 <p>Orlando son dos mundos. La mayoría de las guías en español los cuentan por separado. Nosotros los armamos juntos, porque así viajan las familias.</p>
-<h2>Primero, lo que hay</h2>
+<h2 id="primero-lo-que-hay">Primero, lo que hay</h2>
 <ul>
 <li><strong>Disney:</strong> Magic Kingdom, EPCOT, Hollywood Studios y Animal Kingdom, más dos parques de agua.</li>
 <li><strong>Universal:</strong> Universal Studios Florida, Islands of Adventure y Epic Universe, más el parque de agua Volcano Bay.</li>
 </ul>
 <p>Ojo: el Park Hopper de Disney y el Park-to-Park de Universal no cruzan entre complejos. Son sistemas distintos.</p>
-<figure class="foto"><img src="/fotos/epic-universe.jpg" alt="Epic Universe" loading="lazy" decoding="async"><figcaption>Foto: Gfgbeach · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="noopener" target="_blank">CC0</a> · <a href="https://commons.wikimedia.org/wiki/File:Chronos_Tower_Front_Epic_Universe.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>7 días: lo esencial de los dos</h2>
+<figure class="foto"><img src="/fotos/epic-universe.jpg" alt="Epic Universe" loading="lazy" decoding="async"><figcaption>Foto: Gfgbeach · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="noopener" target="_blank">CC0</a> · <a href="https://commons.wikimedia.org/wiki/File:Chronos_Tower_Front_Epic_Universe.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="7-dias-lo-esencial-de-los-dos">7 días: lo esencial de los dos</h2>
 <p>Llegada liviana. Tres días de Disney (Magic Kingdom, EPCOT y Hollywood Studios). Dos días de Universal: uno para Epic Universe y otro para Universal Studios e Islands of Adventure con Park-to-Park (qué entrada de 2 días lo incluye, a confirmar en la web oficial). Vuelta.</p>
-<h2>10 días: el equilibrio</h2>
+<h2 id="10-dias-el-equilibrio">10 días: el equilibrio</h2>
 <p>Llegada. Los 4 parques de Disney. Un día libre en el medio. Los 3 de Universal, con Epic en su propio día. Vuelta.</p>
-<figure class="foto"><img src="/fotos/commons/islands-of-adventure-orlando-51149417278.jpg" alt="Islands of Adventure" loading="lazy" decoding="async"><figcaption>Foto: Eric A. Soto · <a href="https://creativecommons.org/licenses/by-sa/2.0" rel="noopener" target="_blank">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Islands_of_Adventure_Orlando_(51149417278).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>14 días: el viaje soñado</h2>
+<figure class="foto"><img src="/fotos/commons/islands-of-adventure-orlando-51149417278.jpg" alt="Islands of Adventure" loading="lazy" decoding="async"><figcaption>Foto: Eric A. Soto · <a href="https://creativecommons.org/licenses/by-sa/2.0" rel="noopener" target="_blank">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Islands_of_Adventure_Orlando_(51149417278).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="14-dias-el-viaje-sonado">14 días: el viaje soñado</h2>
 <p>Todo lo anterior, más repetir el parque favorito, un parque de agua y dos días libres. Con chicos, los días libres no son tiempo perdido: son los que salvan el viaje.</p>
-<h2>Tres consejos para combinar</h2>
+<h2 id="tres-consejos-para-combinar">Tres consejos para combinar</h2>
 <ol>
 <li><strong>Agrupen por complejo:</strong> primero todos los días de Disney y después todos los de Universal, o al revés. Menos traslados, menos cambios de hotel.</li>
 <li><strong>Pueden dividir el alojamiento:</strong> unas noches cerca de Disney y otras cerca de Universal.</li>
 <li><strong>Si van a Universal 3 días o más,</strong> las entradas de 3 días permiten volver a Epic Universe varios días.</li>
 </ol>
-<figure class="foto"><img src="/fotos/commons/usf-entrance.jpg" alt="Universal Studios Florida" loading="lazy" decoding="async"><figcaption>Foto: NBCUniversal · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:USF_Entrance.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>Que la app lo arme</h2>
+<figure class="foto"><img src="/fotos/commons/usf-entrance.jpg" alt="Universal Studios Florida" loading="lazy" decoding="async"><figcaption>Foto: NBCUniversal · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener" target="_blank">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:USF_Entrance.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="que-la-app-lo-arme">Que la app lo arme</h2>
 <p>El planificador de Había una vez Orlando mezcla los dos complejos solo, con descansos y parques alternados. Después lo cambian como quieran.</p>
 <p><strong>Empezar mi plan →</strong></p>
 <p><em>Datos según la base verificada del 23 nov 2026. Planificador independiente. Sin afiliación con Disney ni Universal.</em></p>
-<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></main>
-<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer></body></html>
+<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></div><aside class="lateral" aria-label="Más de esta guía"><nav class="lat-caja lat-indice" aria-label="En esta guía"><h2>En esta guía</h2><ol><li><a href="#primero-lo-que-hay">Primero, lo que hay</a></li><li><a href="#7-dias-lo-esencial-de-los-dos">7 días: lo esencial de los dos</a></li><li><a href="#10-dias-el-equilibrio">10 días: el equilibrio</a></li><li><a href="#14-dias-el-viaje-sonado">14 días: el viaje soñado</a></li><li><a href="#tres-consejos-para-combinar">Tres consejos para combinar</a></li><li><a href="#que-la-app-lo-arme">Que la app lo arme</a></li></ol></nav><div class="lat-caja lat-mail"><h2>Su plan gratis, muy pronto ✨</h2><p>Estamos terminando el planificador que arma el viaje de su familia solo. Les avisamos apenas abra.</p><form class="form-aviso" novalidate><label class="sr" for="aviso-mail" style="position:absolute;left:-9999px">Su mail</label><input id="aviso-mail" type="email" name="EMAIL" autocomplete="email" placeholder="su@mail.com" required><button type="submit">Avísenme</button><p class="estado" role="status" aria-live="polite"></p></form></div><div class="lat-caja lat-guias"><h2>Sigan leyendo</h2><ul><li><a href="/blog/mejores-atracciones-magic-kingdom/"><img src="/fotos/commons/main-street-usa-magic-kingdom-walt-disney-world-2024.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Las 10 mejores atracciones de Magic Kingdom (y dónde comer)</span></a></li><li><a href="/blog/mejores-atracciones-epcot/"><img src="/fotos/commons/epcot-france-pavilion-by-ckramer.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Las 10 mejores atracciones de EPCOT (y dónde comer)</span></a></li><li><a href="/blog/mejores-atracciones-hollywood-studios/"><img src="/fotos/commons/star-wars-galaxy-s-edge-walt-disney-world.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Las 10 mejores atracciones de Hollywood Studios (y dónde comer)</span></a></li></ul></div></aside></main>
+<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer><script>(function(){var A="https://88bda20a.sibforms.com/serve/MUIFAGi55uh39gSP62wBp2HcXHm-0-_T6PiUDcT1JLvWoOw3s2JYiZr1JLYD125YXCN6qHh2yED8_Jv08NGyXi_knvys_UppWvvyKLnw0GskrCSlGDR7_8JPkg7qPP7ZXKVkYbV-IRjgt1xlz3Q8w3eUNgMSlofZU1MYBbaN7jKFLaI01CdY4mI2_vxdyrt-nV1IQu-wbyb9M6WIaw==";document.querySelectorAll('form.form-aviso').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var m=f.querySelector('input'),es=f.querySelector('.estado'),v=m.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){es.textContent='Revisen el mail: parece que le falta algo.';m.focus();return;}var d=new FormData();d.append('EMAIL',v);d.append('email_address_check','');d.append('locale','es');fetch(A,{method:'POST',body:d,mode:'no-cors'}).then(function(){es.textContent='¡Listo! Les mandamos un mail para confirmar ✨';f.reset();}).catch(function(){es.textContent='No pudimos anotarlos. Prueben de nuevo en un rato.';});});});})();</script></body></html>
