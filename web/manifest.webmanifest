@@ -1,0 +1,15 @@
+{
+  "name": "Había una vez Orlando",
+  "short_name": "Había una vez",
+  "description": "Que sea como lo soñaron. Organiza los días de parque, los descansos y el presupuesto de tu familia en un solo plan.",
+  "lang": "es",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFF8EA",
+  "theme_color": "#27205F",
+  "icons": [
+    { "src": "marca/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "marca/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "marca/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
