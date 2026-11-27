@@ -23,10 +23,35 @@ blockquote{margin:1em 0;padding:12px 18px;background:var(--lavender);border-radi
 @media (prefers-reduced-motion:reduce){.lista li.card{transition:none}.lista li.card:hover{transform:none}}
 footer{max-width:720px;margin:0 auto;padding:20px;color:var(--muted);font-size:.85rem;border-top:1px solid #C9C2DD}
 img{max-width:100%}
-.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style></head><body>
+.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style><style>/* ancho-escritorio */
+.top{max-width:1180px}
+@media (min-width:900px){ main.indice-blog{max-width:1180px} main.indice-blog .lista{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px} }
+.lateral{display:grid;gap:18px;margin-top:36px}
+.lat-caja{background:var(--paper,#FFFCFA);border:1px solid #e3def7;border-radius:18px;padding:18px 20px}
+.lat-caja h2{font-family:Georgia,serif;font-weight:400;font-size:1.15rem;margin:0 0 10px;color:var(--indigo,#27205F)}
+.lat-caja p{font-size:.95rem;margin:0 0 10px;line-height:1.5}
+.lat-indice{display:none}
+.lat-indice ol{margin:0;padding-left:1.1em;font-size:.95rem;line-height:1.55}
+.lat-indice li{margin:0 0 6px}
+.lat-mail{background:var(--indigo,#27205F);color:var(--cream,#FFF8EA);border:0}
+.lat-mail h2{color:var(--cream,#FFF8EA)}
+.lat-mail form{display:grid;gap:8px}
+.lat-mail input{min-height:44px;padding:8px 14px;border:0;border-radius:999px;font:16px Arial,Helvetica,sans-serif}
+.lat-mail button{min-height:44px;border:0;border-radius:999px;background:var(--mint,#85E8D7);color:var(--indigo,#27205F);font:700 15px Arial,Helvetica,sans-serif;cursor:pointer}
+.lat-mail .estado{min-height:1.2em;font-size:.9rem;font-weight:700;margin:4px 0 0}
+.lat-guias ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.lat-guias a{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;font-size:.92rem;line-height:1.35;text-decoration:none;color:inherit}
+.lat-guias img{width:72px;height:54px;object-fit:cover;border-radius:10px}
+@media (min-width:1100px){
+  main.con-lateral{max-width:1180px;display:grid;grid-template-columns:minmax(0,1fr) 320px;column-gap:56px;align-items:start}
+  main.con-lateral .cuerpo{max-width:760px}
+  .lateral{position:sticky;top:20px;margin-top:8px;max-height:calc(100vh - 40px);overflow:auto}
+  .lat-indice{display:block}
+}
+</style></head><body>
 <header class="top"><a href="/" aria-label="Había una vez Orlando, inicio"><img src="/marca/logo-principal.svg" alt="Había una vez Orlando" width="170" height="70"></a>
 <nav aria-label="Principal"><a href="/blog/">Guías</a><a href="/#planes">Planes</a><a href="/#empezar">Empezar mi plan</a></nav></header>
-<main><h1>El test: ¿qué parque de Orlando es su familia?</h1><figure class="foto hero"><img src="/arte/mate-en-la-fila-640.jpg" alt="Una familia comparte un mate durante una pausa en el parque." loading="lazy" decoding="async"><figcaption>Ilustración: Había una vez Orlando</figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p>Siete preguntas y un resultado. Anoten cuántas veces eligen cada letra.</p>
+<main class="con-lateral"><div class="cuerpo"><h1>El test: ¿qué parque de Orlando es su familia?</h1><figure class="foto hero"><img src="/arte/mate-en-la-fila-640.jpg" alt="Una familia comparte un mate durante una pausa en el parque." loading="lazy" decoding="async"><figcaption>Ilustración: Había una vez Orlando</figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p>Siete preguntas y un resultado. Anoten cuántas veces eligen cada letra.</p>
 <p><strong>1. Un sábado ideal en familia es…</strong>
 A) Una película de las de siempre, todos juntos en el sillón.
 B) Probar un restaurante de comida de otro país.
@@ -70,7 +95,7 @@ C) Ser invencibles.
 D) Hablar con los animales.
 E) Viajar entre mundos.</p>
 <hr />
-<h2>Resultados</h2>
+<h2 id="resultados">Resultados</h2>
 <p><strong>Mayoría A: Magic Kingdom 🏰.</strong> Su familia es de clásicos. Castillo, desfiles y fuegos: es el parque donde la infancia no se termina. Vayan el primer día completo y quédense hasta el final.</p>
 <p><strong>Mayoría B: EPCOT 🌐.</strong> Curiosos y viajeros. El mundo en un parque, sabores de muchos países y atracciones grandes. Dejen los pabellones de los países para la tarde.</p>
 <p><strong>Mayoría C: Hollywood Studios 🎬.</strong> Familia de película. Acción, emoción y atracciones que se sienten como entrar en la pantalla. La primera hora vale oro.</p>
@@ -82,5 +107,5 @@ E) Viajar entre mundos.</p>
 <p><strong><a href="/#empezar">Armar el plan con su parque →</a></strong></p>
 <hr />
 <p><em>Planificador independiente. Sin afiliación con Disney ni Universal.</em></p>
-<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></main>
-<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer></body></html>
+<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></div><aside class="lateral" aria-label="Más de esta guía"><nav class="lat-caja lat-indice" aria-label="En esta guía"><h2>En esta guía</h2><ol><li><a href="#resultados">Resultados</a></li></ol></nav><div class="lat-caja lat-mail"><h2>Su plan gratis, muy pronto ✨</h2><p>Estamos terminando el planificador que arma el viaje de su familia solo. Les avisamos apenas abra.</p><form class="form-aviso" novalidate><label class="sr" for="aviso-mail" style="position:absolute;left:-9999px">Su mail</label><input id="aviso-mail" type="email" name="EMAIL" autocomplete="email" placeholder="su@mail.com" required><button type="submit">Avísenme</button><p class="estado" role="status" aria-live="polite"></p></form></div><div class="lat-caja lat-guias"><h2>Sigan leyendo</h2><ul><li><a href="/blog/disney-world-primera-vez-guia-familias/"><img src="/fotos/commons/magic-kingdom-firework.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Disney World por primera vez: la guía completa para familias latinoamericanas (2027)</span></a></li><li><a href="/blog/cuantos-dias-disney-universal/"><img src="/fotos/commons/cinderella-castle-january-2021.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>¿Cuántos días necesito para Disney y Universal? La respuesta según la edad de sus hijos</span></a></li><li><a href="/blog/errores-primera-vez-disney/"><img src="/fotos/commons/main-street-rain-jtpi-5137-15454967755.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Los 12 errores de la primera vez en Disney (y cómo evitarlos)</span></a></li></ul></div></aside></main>
+<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer><script>(function(){var A="https://88bda20a.sibforms.com/serve/MUIFAGi55uh39gSP62wBp2HcXHm-0-_T6PiUDcT1JLvWoOw3s2JYiZr1JLYD125YXCN6qHh2yED8_Jv08NGyXi_knvys_UppWvvyKLnw0GskrCSlGDR7_8JPkg7qPP7ZXKVkYbV-IRjgt1xlz3Q8w3eUNgMSlofZU1MYBbaN7jKFLaI01CdY4mI2_vxdyrt-nV1IQu-wbyb9M6WIaw==";document.querySelectorAll('form.form-aviso').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var m=f.querySelector('input'),es=f.querySelector('.estado'),v=m.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){es.textContent='Revisen el mail: parece que le falta algo.';m.focus();return;}var d=new FormData();d.append('EMAIL',v);d.append('email_address_check','');d.append('locale','es');fetch(A,{method:'POST',body:d,mode:'no-cors'}).then(function(){es.textContent='¡Listo! Les mandamos un mail para confirmar ✨';f.reset();}).catch(function(){es.textContent='No pudimos anotarlos. Prueben de nuevo en un rato.';});});});})();</script></body></html>

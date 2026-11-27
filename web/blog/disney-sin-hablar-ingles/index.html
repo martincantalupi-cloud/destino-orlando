@@ -23,22 +23,47 @@ blockquote{margin:1em 0;padding:12px 18px;background:var(--lavender);border-radi
 @media (prefers-reduced-motion:reduce){.lista li.card{transition:none}.lista li.card:hover{transform:none}}
 footer{max-width:720px;margin:0 auto;padding:20px;color:var(--muted);font-size:.85rem;border-top:1px solid #C9C2DD}
 img{max-width:100%}
-.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style></head><body>
+.foto{margin:1em 0 1.4em}.foto img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;display:block;background:#EAE6FF}.foto figcaption{font-size:.75rem;color:var(--muted);margin-top:6px;line-height:1.4}.foto figcaption a{color:var(--muted)}.hero img{aspect-ratio:16/9}</style><style>/* ancho-escritorio */
+.top{max-width:1180px}
+@media (min-width:900px){ main.indice-blog{max-width:1180px} main.indice-blog .lista{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px} }
+.lateral{display:grid;gap:18px;margin-top:36px}
+.lat-caja{background:var(--paper,#FFFCFA);border:1px solid #e3def7;border-radius:18px;padding:18px 20px}
+.lat-caja h2{font-family:Georgia,serif;font-weight:400;font-size:1.15rem;margin:0 0 10px;color:var(--indigo,#27205F)}
+.lat-caja p{font-size:.95rem;margin:0 0 10px;line-height:1.5}
+.lat-indice{display:none}
+.lat-indice ol{margin:0;padding-left:1.1em;font-size:.95rem;line-height:1.55}
+.lat-indice li{margin:0 0 6px}
+.lat-mail{background:var(--indigo,#27205F);color:var(--cream,#FFF8EA);border:0}
+.lat-mail h2{color:var(--cream,#FFF8EA)}
+.lat-mail form{display:grid;gap:8px}
+.lat-mail input{min-height:44px;padding:8px 14px;border:0;border-radius:999px;font:16px Arial,Helvetica,sans-serif}
+.lat-mail button{min-height:44px;border:0;border-radius:999px;background:var(--mint,#85E8D7);color:var(--indigo,#27205F);font:700 15px Arial,Helvetica,sans-serif;cursor:pointer}
+.lat-mail .estado{min-height:1.2em;font-size:.9rem;font-weight:700;margin:4px 0 0}
+.lat-guias ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.lat-guias a{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;font-size:.92rem;line-height:1.35;text-decoration:none;color:inherit}
+.lat-guias img{width:72px;height:54px;object-fit:cover;border-radius:10px}
+@media (min-width:1100px){
+  main.con-lateral{max-width:1180px;display:grid;grid-template-columns:minmax(0,1fr) 320px;column-gap:56px;align-items:start}
+  main.con-lateral .cuerpo{max-width:760px}
+  .lateral{position:sticky;top:20px;margin-top:8px;max-height:calc(100vh - 40px);overflow:auto}
+  .lat-indice{display:block}
+}
+</style></head><body>
 <header class="top"><a href="/" aria-label="Había una vez Orlando, inicio"><img src="/marca/logo-principal.svg" alt="Había una vez Orlando" width="170" height="70"></a>
 <nav aria-label="Principal"><a href="/blog/">Guías</a><a href="/#planes">Planes</a><a href="/#empezar">Empezar mi plan</a></nav></header>
-<main><h1>¿Hay que hablar inglés para ir a Disney? Lo que sí y lo que no</h1><figure class="foto hero"><img src="/fotos/commons/post-fireworks-crowd-49560220418.jpg" alt="Multitud caminando por Main Street U.S.A. de noche tras los fuegos artificiales del Magic Kingdom" loading="lazy" decoding="async"><figcaption>Foto: Eden, Janine and Jim from New York City · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Post-Fireworks_Crowd_(49560220418).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p>Respuesta corta: <strong>no hace falta que lo hablen perfecto.</strong> La respuesta larga es una buena noticia.</p>
-<h2>Lo que sí hay en español</h2>
+<main class="con-lateral"><div class="cuerpo"><h1>¿Hay que hablar inglés para ir a Disney? Lo que sí y lo que no</h1><figure class="foto hero"><img src="/fotos/commons/post-fireworks-crowd-49560220418.jpg" alt="Multitud caminando por Main Street U.S.A. de noche tras los fuegos artificiales del Magic Kingdom" loading="lazy" decoding="async"><figcaption>Foto: Eden, Janine and Jim from New York City · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Post-Fireworks_Crowd_(49560220418).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><p class="meta">Actualizado: 26 nov 2026 · Datos revisados contra fuentes oficiales</p><p>Respuesta corta: <strong>no hace falta que lo hablen perfecto.</strong> La respuesta larga es una buena noticia.</p>
+<h2 id="lo-que-si-hay-en-espanol">Lo que sí hay en español</h2>
 <ul>
 <li><strong>Mapas y guías en español</strong> en el centro de atención al visitante de cada parque.</li>
 <li><strong>Mucho personal que habla español</strong> en atracciones, restaurantes, hoteles y tiendas de Disney. Pregunten sin miedo.</li>
 <li><strong>La web oficial de Disney en español</strong>, para ver información desde el celular.</li>
 </ul>
-<figure class="foto"><img src="/fotos/commons/mexico-pavilion-at-night-26891542476.jpg" alt="Pirámide del pabellón de México iluminada de noche en World Showcase de EPCOT" loading="lazy" decoding="async"><figcaption>Foto: Sam Howzit · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mexico_Pavilion_at_Night_(26891542476).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>Lo que está mayormente en inglés</h2>
+<figure class="foto"><img src="/fotos/commons/mexico-pavilion-at-night-26891542476.jpg" alt="Pirámide del pabellón de México iluminada de noche en World Showcase de EPCOT" loading="lazy" decoding="async"><figcaption>Foto: Sam Howzit · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mexico_Pavilion_at_Night_(26891542476).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="lo-que-esta-mayormente-en-ingles">Lo que está mayormente en inglés</h2>
 <ul>
 <li><strong>La app My Disney Experience.</strong> Es la que van a usar para entradas, esperas y reservas. Por eso conviene que practiquen con ella en casa, con tiempo, antes de viajar.</li>
 <li><strong>Los shows y las atracciones.</strong> Pero la mayoría se entiende sin palabras: la música, la historia y los efectos hablan solos.</li>
 </ul>
-<figure class="foto"><img src="/fotos/commons/the-american-adventure-23860708488.jpg" alt="Edificio de The American Adventure en World Showcase de EPCOT" loading="lazy" decoding="async"><figcaption>Foto: Sam Howzit · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_American_Adventure_(23860708488).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>10 frases que alcanzan</h2>
+<figure class="foto"><img src="/fotos/commons/the-american-adventure-23860708488.jpg" alt="Edificio de The American Adventure en World Showcase de EPCOT" loading="lazy" decoding="async"><figcaption>Foto: Sam Howzit · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_American_Adventure_(23860708488).jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="10-frases-que-alcanzan">10 frases que alcanzan</h2>
 <table>
 <thead>
 <tr>
@@ -89,16 +114,16 @@ img{max-width:100%}
 </tr>
 </tbody>
 </table>
-<figure class="foto"><img src="/fotos/commons/anaheim-produce-and-toluca-legs-turkey-co-at-disney-s-hollywood-studios.jpg" alt="Puestos de comida que venden patas de pavo y fruta en Sunset Boulevard, Hollywood Studios" loading="lazy" decoding="async"><figcaption>Foto: ThemeParkTourist · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Anaheim_Produce_and_Toluca_Legs_Turkey_Co._at_Disney%E2%80%99s_Hollywood_Studios.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2>Trucos de familia</h2>
+<figure class="foto"><img src="/fotos/commons/anaheim-produce-and-toluca-legs-turkey-co-at-disney-s-hollywood-studios.jpg" alt="Puestos de comida que venden patas de pavo y fruta en Sunset Boulevard, Hollywood Studios" loading="lazy" decoding="async"><figcaption>Foto: ThemeParkTourist · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener" target="_blank">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Anaheim_Produce_and_Toluca_Legs_Turkey_Co._at_Disney%E2%80%99s_Hollywood_Studios.jpg" rel="noopener" target="_blank">vía Wikimedia Commons</a></figcaption></figure><h2 id="trucos-de-familia">Trucos de familia</h2>
 <ul>
 <li><strong>Una tarjeta en el bolsillo de cada chico</strong> con el nombre del hotel y el celular de un adulto.</li>
 <li><strong>Un punto de encuentro por parque.</strong> Elíjanlo apenas entren.</li>
 <li><strong>Capturas de pantalla</strong> de las reservas y entradas, por si falla la señal.</li>
 </ul>
-<h2>El momento que no necesita traducción</h2>
+<h2 id="el-momento-que-no-necesita-traduccion">El momento que no necesita traducción</h2>
 <p>Hay cosas que se entienden en cualquier idioma: la cara de un chico cuando se enciende el castillo, el grito en la primera bajada, el abrazo al final de los fuegos. Para eso no hace falta inglés.</p>
 <p><strong><a href="/#empezar">Empezar mi plan (en español, claro) →</a></strong></p>
 <hr />
 <p><em>Fuente: planDisney en español (2026). Planificador independiente. Sin afiliación con Disney ni Universal.</em></p>
-<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></main>
-<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer></body></html>
+<div class="cta"><p>Armen su plan día por día, gratis y en español.</p><a class="btn" href="/#empezar">Empezar mi plan ✨</a></div></div><aside class="lateral" aria-label="Más de esta guía"><nav class="lat-caja lat-indice" aria-label="En esta guía"><h2>En esta guía</h2><ol><li><a href="#lo-que-si-hay-en-espanol">Lo que sí hay en español</a></li><li><a href="#lo-que-esta-mayormente-en-ingles">Lo que está mayormente en inglés</a></li><li><a href="#10-frases-que-alcanzan">10 frases que alcanzan</a></li><li><a href="#trucos-de-familia">Trucos de familia</a></li><li><a href="#el-momento-que-no-necesita-traduccion">El momento que no necesita traducción</a></li></ol></nav><div class="lat-caja lat-mail"><h2>Su plan gratis, muy pronto ✨</h2><p>Estamos terminando el planificador que arma el viaje de su familia solo. Les avisamos apenas abra.</p><form class="form-aviso" novalidate><label class="sr" for="aviso-mail" style="position:absolute;left:-9999px">Su mail</label><input id="aviso-mail" type="email" name="EMAIL" autocomplete="email" placeholder="su@mail.com" required><button type="submit">Avísenme</button><p class="estado" role="status" aria-live="polite"></p></form></div><div class="lat-caja lat-guias"><h2>Sigan leyendo</h2><ul><li><a href="/blog/dormir-dentro-o-fuera-de-disney/"><img src="/fotos/commons/disney-s-polynesian-resort-pool.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>¿Dormir dentro o fuera de Disney? La cuenta honesta</span></a></li><li><a href="/blog/calendario-viaje-disney/"><img src="/fotos/commons/wishes-14076813120.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Qué hacer 180, 90, 60, 30, 14, 7 y 3 días antes de ir a Disney</span></a></li><li><a href="/blog/disney-con-chicos-de-2-a-6-anos/"><img src="/fotos/commons/theme-park-tourist-23349382161.jpg" alt="" loading="lazy" decoding="async" width="72" height="54"><span>Disney con chicos de 2 a 6 años: el plan que no termina en berrinche</span></a></li></ul></div></aside></main>
+<footer>Planificador independiente. Sin afiliación con Disney ni Universal. · <a href="/">habiaunavezorlando.com</a> · <a href="/creditos/">Créditos de fotos</a></footer><script>(function(){var A="https://88bda20a.sibforms.com/serve/MUIFAGi55uh39gSP62wBp2HcXHm-0-_T6PiUDcT1JLvWoOw3s2JYiZr1JLYD125YXCN6qHh2yED8_Jv08NGyXi_knvys_UppWvvyKLnw0GskrCSlGDR7_8JPkg7qPP7ZXKVkYbV-IRjgt1xlz3Q8w3eUNgMSlofZU1MYBbaN7jKFLaI01CdY4mI2_vxdyrt-nV1IQu-wbyb9M6WIaw==";document.querySelectorAll('form.form-aviso').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var m=f.querySelector('input'),es=f.querySelector('.estado'),v=m.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){es.textContent='Revisen el mail: parece que le falta algo.';m.focus();return;}var d=new FormData();d.append('EMAIL',v);d.append('email_address_check','');d.append('locale','es');fetch(A,{method:'POST',body:d,mode:'no-cors'}).then(function(){es.textContent='¡Listo! Les mandamos un mail para confirmar ✨';f.reset();}).catch(function(){es.textContent='No pudimos anotarlos. Prueben de nuevo en un rato.';});});});})();</script></body></html>
